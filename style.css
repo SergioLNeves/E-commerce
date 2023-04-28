@@ -67,8 +67,6 @@
     width: 100%;
     height: auto;
   }
-
-
   /* WIDESCREEN */
     @media(min-width: 992px){
     .tituloAbout{
@@ -87,7 +85,6 @@
         font-size: clamp(0.3rem, 1.5vw, 2.0rem);
       }
     }
-
   /* Mobile */
     @media(max-width: 991px){
       .tituloAbout{
@@ -107,6 +104,56 @@
         font-size: clamp(0.3rem, 3.5vw, 2rem);
       }
     }
+
+/* SECTION TEAM */
+
+  /* WIDESCREEN */
+  @media(min-width: 992px){
+    .divColMobile{
+        display: none !important;
+    }
+    .sectionTeam{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: clamp(2.75rem, 4.5vw, 5.5rem);
+    }
+    .nomeTeam{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: clamp(2.75rem, 4.5vw, 5.5rem);
+    }
+    .cargoTeam{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: clamp(1.0rem, 1.5vw, 4.5rem);
+    }  
+    
+  }
+
+  /* Mobile */
+  @media(max-width: 991px){
+    .divColWidescreen{
+      display: none !important;
+  }
+    .sectionTeam{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: clamp(1.2rem, 8.5vw, 3.2rem);
+    }
+    .nomeTeam{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: clamp(1.4rem, 6.5vw, 4.5rem);
+    }
+    .cargoTeam{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: clamp(1.0rem, 6.5vw, 1.5rem);
+    }  
+    
+  }
+
+  
 
 .button-57 {
   position: relative;
