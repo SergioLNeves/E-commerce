@@ -120,7 +120,7 @@
     .nomeTeam{
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
-        font-size: clamp(2.75rem, 4.5vw, 5.5rem);
+        font-size: clamp(1.75rem, 3.5vw, 5.5rem);
     }
     .cargoTeam{
         font-family: 'Roboto', sans-serif;
@@ -148,7 +148,7 @@
     .cargoTeam{
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: clamp(1.0rem, 6.5vw, 1.5rem);
+        font-size: clamp(0.7rem, 2.5vw, 1.5rem);
     }  
     
   }
