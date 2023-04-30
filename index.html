@@ -25,17 +25,24 @@
             <a id="navbarLogo" class="navbar-brand logo-white fs-1" href="#">Downtown<span class="span">Style</span></a>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link itemsNavbar-white fs-4" href="#homePage">Home</a>
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#homePage">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link itemsNavbar-white fs-4" href="#sobreNos">About</a>
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#sobreNos">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link itemsNavbar-white fs-4" href="#teamPage">Team</a>
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#teamPage">Team</a>
                 </li>
+                <button onclick="toggleDropdown()" class="dropbtn dropdownNavbar" alt="Menu">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#homePage">Home</a>
+                  <a href="#sobreNos">About</a>
+                  <a href="#teamPage">Team</a>
+                </div>
             </ul>
         </nav>
     </header>
+
     <div data-bs-spy="scroll" data-bs-target="#navbarElement" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" tabindex="0">
 
@@ -134,7 +141,7 @@
             </div>
         </div>
         <!-- SECTION ABOUT  -->
-        <div id="sobreNos">
+        <div id="sobreNos" class="pt-5">
             <div class="container-fluid px-5 mt-3 mt-md-5 pt-xxl-5">
                 <div class="row d-flex align-items-center justify-content-evenly">
                     <div class="col-sm-12 col-lg-6">
@@ -156,11 +163,11 @@
             </div>
         </div>
         <!-- SECTION TEAM  -->
-        <div id="teamPage">
+        <div id="teamPage" class="pt-5">
             <div class="container-fluid">
                 <div class="d-flex flex-column">
-                    <div class="mt-5 p-xxl-3 d-flex justify-content-center">
-                        <p class="sectionTeam text-center">Nosso Incrível Time</p>
+                    <div class="mt-2 p-xxl-3 d-flex justify-content-center">
+                        <p class="sectionTeam text-center">Conheça nossa equipe</p>
                     </div>
                     <!-- MOBILE -->
                     <div class="d-flex flex-column p-1 divColMobile">
@@ -179,14 +186,14 @@
                         </div>
                         <div class="col-12">
                             <div class="my-1 d-flex flex-row align-items-center justify-content-evenly">
+                                <div>
+                                    <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
+                                    <p class="cargoTeam text-center">Designer de Moda</p>
+                                </div>
                                 <div class="col-6">
                                     <img class="imageAbout img-thumbnail rounded-circle shadow-sm "
                                         src="./assets/imageTeam/team2.png"
                                         alt="Foto de uma mulher negra com black e brincos de argola">
-                                </div>
-                                <div>
-                                    <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
-                                    <p class="cargoTeam text-center">Designer de Moda</p>
                                 </div>
                             </div>
                         </div>

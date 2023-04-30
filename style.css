@@ -21,12 +21,6 @@
         font-family: 'Staatliches', cursive;
         color:white
     }
-    .itemsNavbar-White{
-        font-size:x-large;
-        text-decoration:none;
-        color:#4c94ff;
-        font-family: 'Staatliches', cursive;
-    }
     .span{
       color:#b699ff;
     }
@@ -39,6 +33,61 @@
         text-decoration:none;
         color:black;
         font-family: 'Staatliches', cursive;
+    }
+    @media (min-width: 992px) {
+      .dropdownNavbar {
+        display: none;
+      }
+    }
+    @media (max-width: 991px) {
+      .itemsNavbar {
+        display: none;
+      }
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: #b699ff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      padding: 8px 18px;
+      border-radius: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      top: 40px;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      border-radius: 4px;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .show {
+      display: block;
+    }
+    .navbarItems{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      color: #b699ff;
+    }
+    .nav-link:hover{
+      color: #5517ff;
     }
 
 /* SECTION CAROUSEL HOME */
