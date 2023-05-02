@@ -28,16 +28,20 @@
                     <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#homePage">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#sobreNos">About</a>
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#sobreNos">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#teamPage">Team</a>
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#teamPage">Time</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#lojaPage">Loja</a>
                 </li>
                 <button onclick="toggleDropdown()" class="dropbtn dropdownNavbar" alt="Menu">Menu</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#homePage">Home</a>
-                  <a href="#sobreNos">About</a>
-                  <a href="#teamPage">Team</a>
+                    <a href="#homePage">Home</a>
+                    <a href="#sobreNos">Sobre</a>
+                    <a href="#teamPage">Time</a>
+                    <a href="#lojaPage">Loja</a>
                 </div>
             </ul>
         </nav>
@@ -67,12 +71,12 @@
                             <!-- IMAGE 1 -->
                             <div class="carousel-item active">
                                 <div class="carrousel1">
-                                    <a href="#loja"><img src="./assets/bannerCarousel/bannerCarousel1-MOBILE.png"
+                                    <a href="#lojaInverno"><img src="./assets/bannerCarousel/bannerCarousel1-MOBILE.png"
                                             class="d-block w-100" alt="seleção de inverno com 30% off">
                                     </a>
                                 </div>
                                 <div class="carrousel1-2">
-                                    <a href="#loja"><img src="./assets/bannerCarousel/bannerCarousel1.png"
+                                    <a href="#lojaInverno"><img src="./assets/bannerCarousel/bannerCarousel1.png"
                                             class="d-block w-100" alt="seleção de inverno com 30% off">
                                     </a>
                                 </div>
@@ -80,14 +84,14 @@
                             <!-- IMAGE 2 -->
                             <div class="carousel-item">
                                 <div class="carrousel1">
-                                    <a href="#loja">
+                                    <a href="#lojaMoletom">
                                         <img src="./assets/bannerCarousel/bannerCarousel2-MOBILE.png"
                                             class="d-block w-100"
                                             alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja">
                                     </a>
                                 </div>
                                 <div class="carrousel1-2">
-                                    <a href="#loja"><img src="./assets/bannerCarousel/bannerCarousel2.png"
+                                    <a href="#lojaMoletom"><img src="./assets/bannerCarousel/bannerCarousel2.png"
                                             class="d-block w-100"
                                             alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja">
                                     </a>
@@ -103,7 +107,7 @@
                                     </a>
                                 </div>
                                 <div class="carrousel1-2">
-                                    <a href="#loja">
+                                    <a href="#teamPage">
                                         <img src="./assets/bannerCarousel/bannerCarousel3.png" class="d-block w-100"
                                             alt="topsales uma curadoria das peças mais versáteis e amadas por vocês">
                                     </a>
@@ -181,6 +185,25 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Gabriel Santos</h2>
                                     <p class="cargoTeam text-center">Gerente de Vendas</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -189,6 +212,25 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
                                     <p class="cargoTeam text-center">Designer de Moda</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-6">
                                     <img class="imageAbout img-thumbnail rounded-circle shadow-sm "
@@ -207,6 +249,26 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Laura Costa</h2>
                                     <p class="cargoTeam text-center">Gerente de Marketing</p>
+
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -223,6 +285,25 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Gabriel Santos</h2>
                                     <p class="cargoTeam text-center">Gerente de Vendas</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -236,6 +317,25 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
                                     <p class="cargoTeam text-center">Designer de Moda</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -249,11 +349,36 @@
                                 <div>
                                     <h2 class="nomeTeam text-center">Laura Costa</h2>
                                     <p class="cargoTeam text-center">Gerente de Marketing</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="px-1" target="_blank"
+                                            href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-linkedin rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a class="px-1" target="_blank" href="https://github.com/SergioLNeves"
+                                            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-github rounded-circle iconTeam"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- SECTION LOJA -->
+        <div id="lojaPage" class="pt-5">
+            <div class="container-fluid">
+
             </div>
         </div>
     </div>
