@@ -32,3 +32,6 @@ window.onclick = function(event) {
   }
 }
 
+$(document).ready(function(){
+  $('.slider').slick();
+});
