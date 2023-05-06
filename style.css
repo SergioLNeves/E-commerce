@@ -7,13 +7,13 @@
 }
 /* SECTION NAVBAR */
 .logo-white {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: white !important;
 }
 
 .logo-white:hover {
-  font-family: 'Staatliches', cursive;
-  color: white
+  font-family: "Staatliches", cursive;
+  color: white;
 }
 
 .span {
@@ -21,7 +21,7 @@
 }
 
 .logo-black {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: black;
 }
 
@@ -29,7 +29,7 @@
   font-size: x-large;
   text-decoration: none;
   color: black;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
 }
 
 @media (min-width: 992px) {
@@ -51,7 +51,7 @@
 
 .dropbtn {
   background-color: #b699ff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: rgb(0, 0, 0);
   font-size: 16px;
@@ -89,7 +89,7 @@
 }
 
 .navbarItems {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #b699ff;
 }
@@ -129,42 +129,42 @@
   height: auto;
 }
 
-/* WIDESCREEN */
-@media(min-width: 992px) {
+/* DESKTOP */
+@media (min-width: 992px) {
   .tituloAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(2.75rem, 4.5vw, 5.5rem);
   }
 
   .spanAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
 
   .paragrafoAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: justify;
-    font-size: clamp(0.3rem, 1.5vw, 2.0rem);
+    font-size: clamp(0.3rem, 1.5vw, 2rem);
   }
 }
 
 /* Mobile */
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .tituloAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(1.2rem, 8.5vw, 3.2rem);
   }
 
   .spanAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
 
   .paragrafoAbout {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: justify;
     font-size: clamp(0.3rem, 3.5vw, 2rem);
@@ -173,30 +173,28 @@
 
 /* SECTION TEAM */
 
-/* WIDESCREEN */
-@media(min-width: 992px) {
+/* DESKTOP */
+@media (min-width: 992px) {
   .divColMobile {
     display: none !important;
   }
 
   .sectionTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(2.75rem, 4.5vw, 5.5rem);
   }
 
   .nomeTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(1.75rem, 3.5vw, 5.5rem);
   }
-
   .cargoTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: clamp(1.0rem, 1.5vw, 4.5rem);
+    font-size: clamp(1rem, 1.5vw, 4.5rem);
     margin-bottom: 8px;
-
   }
 
   .iconTeam {
@@ -204,35 +202,34 @@
     color: black;
     padding: 2px;
     background-color: #b699ff;
-    width: clamp(1.4rem, 3.0vw, 4.2rem) !important;
+    width: clamp(1.4rem, 3vw, 4.2rem) !important;
     height: auto;
   }
-  .iconTeam:hover{
+  .iconTeam:hover {
     background-color: #5517ff;
   }
-
 }
 
 /* Mobile */
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .divColWidescreen {
     display: none !important;
   }
 
   .sectionTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(1.2rem, 8.5vw, 3.2rem);
   }
 
   .nomeTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(1.4rem, 6.5vw, 4.5rem);
   }
 
   .cargoTeam {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: clamp(0.7rem, 2.5vw, 1.5rem);
     margin-bottom: 8px;
@@ -246,22 +243,69 @@
     width: clamp(1.4rem, 5.5vw, 4.2rem) !important;
     height: auto;
   }
-  .iconTeam:hover{
+  .iconTeam:hover {
     background-color: #5517ff;
   }
-
 }
 
 /* SECTION LOJA */
-
-/* */
-
-.slick-slide {
-  text-align: center;
-  color: #fff;
-  background: #4D4D4D;
+.slick-prev:before,
+.slick-next:before {
+  color: #000000;
+}
+.valorLoja{
+  font-family: "Roboto", sans-serif;
+  font-weight: 600 !important;
 }
 
-.slick-prev:before, .slick-next:before {
-  color: #fff;
+/* MOBILE */
+@media (max-width: 991px) {
+  .itemsLoja {
+    width: clamp(9rem, 40vw, 40rem);
+  }
+  .descLoja {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.8rem, 3.5vw, 2rem);
+  }
+  .precoProduto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 3.5vw, 2rem);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .itemsLoja {
+    width: clamp(10rem, 23vw, 36rem);
+  }
+  .descLoja {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.4rem, 1.5vw, 3rem)
+  }
+  .precoProduto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 3.5vw, 2rem);
+  }
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
 }
