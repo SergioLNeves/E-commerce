@@ -37,7 +37,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-        }
+        },
       },
       {
         breakpoint: 1024,
@@ -53,27 +53,29 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".slider-categoria").slick({
     centerMode: true,
-  centerPadding: '150px',
-  slidesToShow: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '50px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        arrows: false,
-        autoplay:true,
-        centerPadding: '70px',
-        slidesToShow: 1
-      }
-    }
-  ],
+    autoplay: true,
+    centerPadding: "150px",
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          autoplay: true,
+          centerMode: true,
+          centerPadding: "50px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: false,
+          autoplay: true,
+          centerPadding: "70px",
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
