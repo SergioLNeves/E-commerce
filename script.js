@@ -27,22 +27,61 @@ window.onclick = function (event) {
 
 $(document).ready(function () {
   $(".slider").slick({
-    autoplay: true,
     infinite: true,
-    autoplaySpeed: 5000,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     draggable: true,
-    dots: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 640,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
     ],
   });
 });
 
+$(document).ready(function () {
+  $(".slider-categoria").slick({
+    centerMode: true,
+  centerPadding: '150px',
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false,
+        autoplay:true,
+        centerPadding: '70px',
+        slidesToShow: 1
+      }
+    }
+  ],
+  });
+});
+
+window.addEventListener("scroll", function() {
+  var div = document.getElementById("sua-div");
+  var pos = div.getBoundingClientRect().top;
+  if (pos < window.innerHeight) {
+    div.classList.add("rotated");
+  }
+});

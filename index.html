@@ -1,264 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DowntownStyle</title>
-    <!-- SLICK -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <!-- BOOTSTRAP 5.3 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="backgroundSite">
-    <!-- NAVBAR -->
-    <header>
-      <nav
-        id="navbarElement"
-        class="mb-5 fixed-top navbar backgroundNavbar d-flex align-items-center px-3 mb-3"
-      >
-        <a id="navbarLogo" class="navbar-brand logo-white fs-1" href="#"
-          >Downtown<span class="span">Style</span></a
-        >
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a
-              class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6"
-              href="#homePage"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6"
-              href="#sobreNos"
-              >Sobre</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6"
-              href="#teamPage"
-              >Time</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6"
-              href="#lojaPage"
-              >Loja</a
-            >
-          </li>
-          <button
-            onclick="toggleDropdown()"
-            class="dropbtn dropdownNavbar"
-            alt="Menu"
-          >
-            Menu
-          </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#homePage">Home</a>
-            <a href="#sobreNos">Sobre</a>
-            <a href="#teamPage">Time</a>
-            <a href="#lojaPage">Loja</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DowntownStyle</title>
+  <!-- SLICK -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
+  <!-- BOOTSTRAP 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="backgroundSite">
+  <!-- NAVBAR -->
+  <header>
+    <nav id="navbarElement" class="mb-5 fixed-top navbar backgroundNavbar d-flex align-items-center px-3 mb-3">
+      <a id="navbarLogo" class="navbar-brand logo-white fs-1" href="#">Downtown<span class="span">Style</span></a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#homePage">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#sobreNos">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#teamPage">Time</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link itemsNavbar-white itemsNavbar navbarItems fs-6" href="#lojaPage">Loja</a>
+        </li>
+        <button onclick="toggleDropdown()" class="dropbtn dropdownNavbar" alt="Menu">
+          Menu
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#homePage">Home</a>
+          <a href="#sobreNos">Sobre</a>
+          <a href="#teamPage">Time</a>
+          <a href="#lojaPage">Loja</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbarElement" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" tabindex="0">
+    <!-- SECTION HOME -->
+    <div id="homePage" class="pt-5">
+      <!-- BANNER -->
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="pt-3 carousel slide" data-bs-ride="carousel">
+          <!-- BUTTON CAROUSEL -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+              class="active bg-black px-0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-black px-0"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-black px-0"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bg-black px-0"
+              aria-label="Slide 4"></button>
           </div>
-        </ul>
-      </nav>
-    </header>
-
-    <div
-      data-bs-spy="scroll"
-      data-bs-target="#navbarElement"
-      data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true"
-      tabindex="0"
-    >
-      <!-- SECTION HOME -->
-      <div id="homePage">
-        <div class="container-fluid py-4">
-          <div
-            id="carouselExampleIndicators"
-            class="pt-5 mt-3 carousel slide"
-            data-bs-ride="carousel"
-          >
-            <!-- BUTTON CAROUSEL -->
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active bg-black px-0"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                class="bg-black px-0"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                class="bg-black px-0"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="3"
-                class="bg-black px-0"
-                aria-label="Slide 4"
-              ></button>
-            </div>
-            <!-- SECTION CAROUSEL -->
-            <div>
-              <div class="carousel-inner shadow-lg p-0 mb-0 rounded-4">
-                <!-- IMAGE 1 -->
-                <div class="carousel-item active">
-                  <div class="carrousel1">
-                    <a href="#lojaInverno"
-                      ><img
-                        src="./assets/bannerCarousel/bannerCarousel1-MOBILE.png"
-                        class="d-block w-100"
-                        alt="seleção de inverno com 30% off"
-                      />
-                    </a>
-                  </div>
-                  <div class="carrousel1-2">
-                    <a href="#lojaInverno"
-                      ><img
-                        src="./assets/bannerCarousel/bannerCarousel1.png"
-                        class="d-block w-100"
-                        alt="seleção de inverno com 30% off"
-                      />
-                    </a>
-                  </div>
+          <!-- SECTION CAROUSEL -->
+          <div>
+            <div class="carousel-inner shadow-lg">
+              <!-- IMAGE 1 -->
+              <div class="carousel-item active">
+                <div class="carrousel1">
+                  <a href="#lojaInverno"><img src="./assets/bannerCarousel/bannerCarousel1-MOBILE.png"
+                      class="d-block w-100" alt="seleção de inverno com 30% off" />
+                  </a>
                 </div>
-                <!-- IMAGE 2 -->
-                <div class="carousel-item">
-                  <div class="carrousel1">
-                    <a href="#lojaMoletom">
-                      <img
-                        src="./assets/bannerCarousel/bannerCarousel2-MOBILE.png"
-                        class="d-block w-100"
-                        alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja"
-                      />
-                    </a>
-                  </div>
-                  <div class="carrousel1-2">
-                    <a href="#lojaMoletom"
-                      ><img
-                        src="./assets/bannerCarousel/bannerCarousel2.png"
-                        class="d-block w-100"
-                        alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja"
-                      />
-                    </a>
-                  </div>
+                <div class="carrousel1-2">
+                  <a href="#lojaInverno"><img src="./assets/bannerCarousel/bannerCarousel1.png" class="d-block w-100"
+                      alt="seleção de inverno com 30% off" />
+                  </a>
                 </div>
-                <!-- IMAGE 3 -->
-                <div class="carousel-item">
-                  <div class="carrousel1">
-                    <a href="#loja">
-                      <img
-                        src="./assets/bannerCarousel/bannerCarousel3-MOBILE.png"
-                        class="d-block w-100"
-                        alt="topsales uma curadoria das peças mais versáteis e amadas por vocês"
-                      />
-                    </a>
-                  </div>
-                  <div class="carrousel1-2">
-                    <a href="#teamPage">
-                      <img
-                        src="./assets/bannerCarousel/bannerCarousel3.png"
-                        class="d-block w-100"
-                        alt="topsales uma curadoria das peças mais versáteis e amadas por vocês"
-                      />
-                    </a>
-                  </div>
+              </div>
+              <!-- IMAGE 2 -->
+              <div class="carousel-item">
+                <div class="carrousel1">
+                  <a href="#lojaMoletom">
+                    <img src="./assets/bannerCarousel/bannerCarousel2-MOBILE.png" class="d-block w-100"
+                      alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja" />
+                  </a>
                 </div>
-                <!-- IMAGE 4 -->
-                <div class="carousel-item">
-                  <div class="carrousel1">
-                    <a href="#sobreNos">
-                      <img
-                        src="./assets/bannerCarousel/bannerCarousel4-MOBILE.png"
-                        class="d-block w-100"
-                        alt="seja autor do seu estilo seja Downtown"
-                      />
-                    </a>
-                  </div>
-                  <div class="carrousel1-2">
-                    <a href="#sobreNos">
-                      <img
-                        src="./assets/bannerCarousel/bannerCarousel4.png"
-                        class="d-block w-100"
-                        alt="seja autor do seu estilo seja Downtown"
-                      />
-                    </a>
-                  </div>
+                <div class="carrousel1-2">
+                  <a href="#lojaMoletom"><img src="./assets/bannerCarousel/bannerCarousel2.png" class="d-block w-100"
+                      alt="na compra de 1 moletom 50% de desconto em sua próxima compra na loja, desconto apenas na lista selecionada da loja" />
+                  </a>
+                </div>
+              </div>
+              <!-- IMAGE 3 -->
+              <div class="carousel-item">
+                <div class="carrousel1">
+                  <a href="#loja">
+                    <img src="./assets/bannerCarousel/bannerCarousel3-MOBILE.png" class="d-block w-100"
+                      alt="topsales uma curadoria das peças mais versáteis e amadas por vocês" />
+                  </a>
+                </div>
+                <div class="carrousel1-2">
+                  <a href="#teamPage">
+                    <img src="./assets/bannerCarousel/bannerCarousel3.png" class="d-block w-100"
+                      alt="topsales uma curadoria das peças mais versáteis e amadas por vocês" />
+                  </a>
+                </div>
+              </div>
+              <!-- IMAGE 4 -->
+              <div class="carousel-item">
+                <div class="carrousel1">
+                  <a href="#sobreNos">
+                    <img src="./assets/bannerCarousel/bannerCarousel4-MOBILE.png" class="d-block w-100"
+                      alt="seja autor do seu estilo seja Downtown" />
+                  </a>
+                </div>
+                <div class="carrousel1-2">
+                  <a href="#sobreNos">
+                    <img src="./assets/bannerCarousel/bannerCarousel4.png" class="d-block w-100"
+                      alt="seja autor do seu estilo seja Downtown" />
+                  </a>
                 </div>
               </div>
             </div>
-            <!-- BUTTON CONFIG CAROUSEL -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">next</span>
-            </button>
+          </div>
+          <!-- BUTTON CONFIG CAROUSEL -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">next</span>
+          </button>
+        </div>
+      </div>
+      <!-- CAROUSEL -->
+      <div class="container-fluid pt-5 mt-4">
+        <div class="container mt-2 p-xxl-3 d-flex justify-content-start">
+          <p class="sectionLoja ml-5">Dia das Mães Downtown </p>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider-categoria d-flex justify-content-center">
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex.png" alt="tricôs" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">Tricôs</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex2.png" alt="Casacos e Blazers" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">Casacos e Blazers</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex3.png" alt="Calças" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">Calças</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex4.png" alt="vestidos" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">Vestidos</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex5.png" alt="pijamas" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">pijamas</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex6.png" alt="acessorios" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">Acessórios</p>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="d-flex justify-content-center">
+                <img class="itemsLoja2 rounded-3" src="./assets/categoriasHome/vtex7.png" alt="makes" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fs-5">makes</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div>
       <!-- SECTION ABOUT  -->
-      <div id="sobreNos" class="pt-5">
+      <div id="sobreNos" class="pt-5 pb-3">
         <div class="container-fluid px-5 mt-3 mt-md-5 pt-xxl-5">
           <div class="row d-flex align-items-center justify-content-evenly">
             <div class="col-sm-12 col-lg-6">
@@ -267,25 +225,22 @@
                 <span class="spanAbout">ICÔNICO.</span>
               </p>
               <p class="paragrafoAbout">
-                Oferecemos uma ampla variedade de roupas, desde peças clássicas
-                até as últimas tendências da moda, com preços acessíveis e
-                atendimento ao cliente excepcional. Venha nos visitar e descubra
-                nossa coleção cuidadosamente selecionada.
+                Oferecemos uma ampla variedade de roupas, desde peças
+                clássicas até as últimas tendências da moda, com preços
+                acessíveis e atendimento ao cliente excepcional. Venha nos
+                visitar e descubra nossa coleção cuidadosamente selecionada.
               </p>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-5 col-xxl-3">
-              <img
-                class="imageAbout figure-img rounded-5"
-                src="assets\aboutImage\about.png"
-                alt="Homem de casaco marrom e bone preto: Foto de Tony Schnagl no Pexels"
-              />
+              <img class="imageAbout figure-img rounded-5" src="assets\aboutImage\about.png"
+                alt="Homem de casaco marrom e bone preto: Foto de Tony Schnagl no Pexels" />
             </div>
           </div>
         </div>
       </div>
       <!-- SECTION TEAM  -->
       <div id="teamPage" class="pt-5">
-        <div class="container-fluid">
+        <div class="container-fluid p-5">
           <div class="d-flex flex-column">
             <div class="mt-2 p-xxl-3 d-flex justify-content-center">
               <p class="sectionTeam text-center">Conheça nossa equipe</p>
@@ -293,54 +248,27 @@
             <!-- MOBILE -->
             <div class="d-flex flex-column p-1 divColMobile">
               <div class="col-12">
-                <div
-                  class="my-1 d-flex flex-row align-items-center justify-content-evenly"
-                >
+                <div class="my-1 d-flex flex-row align-items-center justify-content-evenly">
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team1.png"
-                      alt="Foto de um homem Negro com um óculos, barba e sem bigode"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team1.png"
+                      alt="Foto de um homem Negro com um óculos, barba e sem bigode" />
                   </div>
                   <div>
                     <h2 class="nomeTeam text-center">Gabriel Santos</h2>
                     <p class="cargoTeam text-center">Gerente de Vendas</p>
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
@@ -348,110 +276,56 @@
                 </div>
               </div>
               <div class="col-12">
-                <div
-                  class="my-1 d-flex flex-row align-items-center justify-content-evenly"
-                >
+                <div class="my-1 d-flex flex-row align-items-center justify-content-evenly">
                   <div>
                     <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
                     <p class="cargoTeam text-center">Designer de Moda</p>
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
                   </div>
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team2.png"
-                      alt="Foto de uma mulher negra com black e brincos de argola"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team2.png"
+                      alt="Foto de uma mulher negra com black e brincos de argola" />
                   </div>
                 </div>
               </div>
               <div class="col-12">
-                <div
-                  class="mt-1 d-flex flex-row align-items-center justify-content-evenly"
-                >
+                <div class="mt-1 d-flex flex-row align-items-center justify-content-evenly">
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team3.png"
-                      alt="Foto de uma mulher negra com cabelos cacheados"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team3.png"
+                      alt="Foto de uma mulher negra com cabelos cacheados" />
                   </div>
                   <div>
                     <h2 class="nomeTeam text-center">Laura Costa</h2>
                     <p class="cargoTeam text-center">Gerente de Marketing</p>
 
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
@@ -462,54 +336,27 @@
             <!-- WIDESCREEN -->
             <div class="d-flex flex-row p-1 divColWidescreen">
               <div class="col-4">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-evenly"
-                >
+                <div class="d-flex flex-column align-items-center justify-content-evenly">
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team1.png"
-                      alt="Foto de um homem Negro com um óculos, barba e sem bigode"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team1.png"
+                      alt="Foto de um homem Negro com um óculos, barba e sem bigode" />
                   </div>
                   <div>
                     <h2 class="nomeTeam text-center">Gabriel Santos</h2>
                     <p class="cargoTeam text-center">Gerente de Vendas</p>
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
@@ -517,54 +364,27 @@
                 </div>
               </div>
               <div class="col-4">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-evenly"
-                >
+                <div class="d-flex flex-column align-items-center justify-content-evenly">
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team2.png"
-                      alt="Foto de uma mulher negra com black e brincos de argola"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team2.png"
+                      alt="Foto de uma mulher negra com black e brincos de argola" />
                   </div>
                   <div>
                     <h2 class="nomeTeam text-center">Sofia Oliveira</h2>
                     <p class="cargoTeam text-center">Designer de Moda</p>
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
@@ -572,316 +392,30 @@
                 </div>
               </div>
               <div class="col-4">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-evenly"
-                >
+                <div class="d-flex flex-column align-items-center justify-content-evenly">
                   <div class="col-6">
-                    <img
-                      class="imageAbout img-thumbnail rounded-circle shadow-sm"
-                      src="./assets/imageTeam/team3.png"
-                      alt="Foto de uma mulher negra com cabelos cacheados"
-                    />
+                    <img class="imageAbout img-thumbnail rounded-circle shadow-sm" src="./assets/imageTeam/team3.png"
+                      alt="Foto de uma mulher negra com cabelos cacheados" />
                   </div>
                   <div>
                     <h2 class="nomeTeam text-center">Laura Costa</h2>
                     <p class="cargoTeam text-center">Gerente de Marketing</p>
                     <div class="d-flex justify-content-center">
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-linkedin rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/"
+                        role="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-linkedin rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                       </a>
-                      <a
-                        class="px-1"
-                        target="_blank"
-                        href="https://github.com/SergioLNeves"
-                        role="button"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          class="bi bi-github rounded-circle iconTeam"
-                          viewBox="0 0 16 16"
-                        >
+                      <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                          class="bi bi-github rounded-circle iconTeam" viewBox="0 0 16 16">
                           <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                       </a>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION LOJA -->
-      <div id="lojaPage" class="pt-5">
-        <div class="container-fluid">
-          <div class="col-12">
-            <div class="slider-wrapper">
-              <div class="slider d-flex justify-content-center">
-                <div>
-                  <div class="card text-bg-light itemsLoja">
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="card text-bg-light d-flex justify-content-center itemsLoja"
-                  >
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-bg-light itemsLoja">
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="card text-bg-light d-flex justify-content-center itemsLoja"
-                  >
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-bg-light itemsLoja">
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="card text-bg-light d-flex justify-content-center itemsLoja"
-                  >
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-bg-light itemsLoja">
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="card text-bg-light d-flex justify-content-center itemsLoja"
-                  >
-                    <img
-                      src="./assets/lojaMoleton/moleton1.png"
-                      class="card-img-top"
-                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1"
-                    />
-                    <div class="card-body">
-                      <p class="card-title descLoja">
-                        jaqueta corta vento de poliamida com capuz e refletivos
-                        esportiva ace preta
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <p
-                          class="mb-0 precoProduto text-decoration-line-through text-danger"
-                        >
-                          de: R$ 329,99
-                        </p>
-                        <p class="mb-0 precoProduto">
-                          por<span class="text-success">
-                            <span class="valorLoja">R$ 269,99</span> à
-                            vista</span
-                          >
-                        </p>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -890,26 +424,276 @@
         </div>
       </div>
     </div>
+    <!-- SECTION LOJA -->
+    <div id="lojaPage" class="py-5">
+      <div class="container-fluid">
+        <!-- SELEÇÃO DE INVERNO -->
+        <div class="col-12 p-5">
+          <div class="mt-2 p-xxl-3 d-flex justify-content-center">
+            <p class="sectionLoja">Seleção de Inverno</p>
+          </div>
+          <div class="slider-wrapper">
+            <div class="slider d-flex justify-content-center">
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton1.png" class="card-img-top"
+                      alt="jaqueta corta vento de poliamida com capuz e refletivos esportiva ace preta 1" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      Jaqueta corta vento esportiva ace preta
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 329,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 269,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton2.png" class="card-img-top"
+                      alt="blusa de moletom oversized squad looney tunes gola redonda cinza mescla claro" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      moletom oversized squad looney tunes
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 189,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 139,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton3.png" class="card-img-top"
+                      alt="jaqueta de suede com recortes e bolsos preto" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      jaqueta de suede com recortes e bolsos preto
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 399,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 359,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton4.png" class="card-img-top"
+                      alt="jaqueta puffer com capuz verde militar" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      jaqueta puffer com capuz verde militar
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 329,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 279,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton5.png" class="card-img-top"
+                      alt="blusa de moletom cropped azul marinho" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      blusa de moletom cropped azul marinho
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 149,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 99,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton6.png" class="card-img-top"
+                      alt="jaqueta alongada puffer com capuz marrom escuro" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      jaqueta alongada puffer com capuz marrom escuro
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 329,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 269,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton7.png" class="card-img-top"
+                      alt="suéter de tricô texturizado básico gola v verde" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      suéter de tricô texturizado básico gola v verde
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 159,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 119,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="card text-bg-light itemsLoja">
+                  <a href="#PaginaItem">
+                    <img src="./assets/lojaMoleton/moleton8.png" class="card-img-top"
+                      alt="blusão de moletom oversized guns n roses cinza escuro" />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-title descLoja mb-0">
+                      blusão de moletom oversized guns n roses cinza escuro
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="mb-0 precoProduto text-decoration-line-through text-danger">
+                        de: R$ 229,99
+                      </p>
+                      <p class="mb-0 precoProduto">
+                        por<span class="text-success">
+                          <span class="valorLoja">R$ 169,99</span> à
+                          vista</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- JAVASCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer class="footer bg-black pt-5 mg-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h6 class="text-light d-flex justify-content-center">Endereço</h6>
+          <p class="text-light d-flex justify-content-center">Senador Camará, nº 53 <br> Rio de Janeiro - RJ <br> CEP:
+            21832-010</p>
+          <p class="text-light d-flex justify-content-center">Telefone: (21) 4002-8922</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <h6 class="text-light d-flex justify-content-center">Redes Sociais</h6>
+          <div class="d-flex justify-content-center">
+            <a class="px-1" target="_blank" href="https://www.linkedin.com/in/sérgio-luiz-294712187/" role="button"><svg
+                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-linkedin rounded-circle iconFooter" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </a>
+            <a class="px-1" target="_blank" href="https://github.com/SergioLNeves" role="button"><svg
+                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-github rounded-circle iconFooter" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 pt-4">
+          <div class="d-flex justify-content-center">
+            <p class="text-light-emphasis ">
+              Copyright &copy; 2020 Empresa DowntownStyle
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

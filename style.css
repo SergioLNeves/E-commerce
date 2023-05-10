@@ -1,37 +1,45 @@
 /* CONFIG BASE DO SITE */
 .backgroundSite {
-  background-color: #e9ecef;
+  background-image: linear-gradient(62deg, #dff0ff 0%, #ffcece 100%);
 }
 .backgroundNavbar {
   background-color: black;
 }
 /* SECTION NAVBAR */
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: #ffadad;
+  --bs-nav-link-hover-color: #ff8c8c;
+  --bs-nav-link-disabled-color: #ffadad;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 .logo-white {
   font-family: "Staatliches", cursive;
   color: white !important;
 }
-
 .logo-white:hover {
   font-family: "Staatliches", cursive;
   color: white;
 }
-
 .span {
-  color: #b699ff;
+  color: #ffadad;
 }
-
 .logo-black {
   font-family: "Staatliches", cursive;
   color: black;
 }
-
 .itemsNavbar-black {
   font-size: x-large;
   text-decoration: none;
   color: black;
   font-family: "Staatliches", cursive;
 }
-
 @media (min-width: 992px) {
   .dropdownNavbar {
     display: none;
@@ -43,14 +51,13 @@
     display: none;
   }
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropbtn {
-  background-color: #b699ff;
+  background-color: #ff8c8c;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: rgb(0, 0, 0);
@@ -60,7 +67,6 @@
   padding: 8px 18px;
   border-radius: 4px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -72,43 +78,73 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
 .show {
   display: block;
 }
-
 .navbarItems {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #b699ff;
+  color: #ffadad;
 }
-
 .nav-link:hover {
-  color: #5517ff;
+  color: #ff8c8c;
 }
 
-/* SECTION CAROUSEL HOME */
+/* SECTION HOME */
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: url(./assets/211607_right_arrow_icon.svg) !important;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  width: clamp(1rem, 3.5vw, 3rem) !important;
+  height: clamp(1rem, 3.5vw, 3rem) !important;
+  opacity: 50%;
 }
 
-.carousel-control-prev-icon {
-  background-image: url(./assets/211689_left_arrow_icon.svg);
+/* CAROUSEL 2*/
+@media (max-width: 639px) {
+  .itemsLoja2 {
+    width: clamp(8rem, 43vw, 12rem);
+  }
+  .descLoja2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2.16vw, 1rem);
+  }
+}
+
+/* CAROUSEL 3*/
+@media (min-width: 640px) and (max-width: 1023px) {
+  .itemsLoja2 {
+    width: clamp(8rem, 43vw, 10rem);
+  }
+  .descLoja2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: clamp(6rem, 24vw, 12rem);
+  }
+}
+/* CAROUSEL 4*/
+@media (min-width: 1024px) {
+  .itemsLoja2 {
+    width: clamp(8rem, 16vw, 20rem);
+  }
+  
 }
 
 .carousel-indicators {
   margin-bottom: -25px;
+}
+.container-fluid {
+  --bs-gutter-x: 0rem;
 }
 
 @media (min-width: 992px) {
@@ -171,20 +207,29 @@
   }
 }
 
+
 /* SECTION TEAM */
+
+.iconTeam {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #ffadad;
+}
+.iconTeam:hover {
+  background-color: #ff8c8c;
+}
+
 
 /* DESKTOP */
 @media (min-width: 992px) {
   .divColMobile {
     display: none !important;
   }
-
   .sectionTeam {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: clamp(2.75rem, 4.5vw, 5.5rem);
   }
-
   .nomeTeam {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -196,17 +241,10 @@
     font-size: clamp(1rem, 1.5vw, 4.5rem);
     margin-bottom: 8px;
   }
-
   .iconTeam {
-    text-decoration: none;
-    color: black;
     padding: 2px;
-    background-color: #b699ff;
     width: clamp(1.4rem, 3vw, 4.2rem) !important;
     height: auto;
-  }
-  .iconTeam:hover {
-    background-color: #5517ff;
   }
 }
 
@@ -236,15 +274,9 @@
   }
 
   .iconTeam {
-    text-decoration: none;
-    color: black;
     padding: 2px;
-    background-color: #b699ff;
     width: clamp(1.4rem, 5.5vw, 4.2rem) !important;
     height: auto;
-  }
-  .iconTeam:hover {
-    background-color: #5517ff;
   }
 }
 
@@ -253,49 +285,64 @@
 .slick-next:before {
   color: #000000;
 }
-.valorLoja{
+.valorLoja {
   font-family: "Roboto", sans-serif;
   font-weight: 600 !important;
 }
 
-/* MOBILE */
-@media (max-width: 991px) {
+/* CAROUSEL 2 IMG*/
+@media (max-width: 639px) {
   .itemsLoja {
-    width: clamp(9rem, 40vw, 40rem);
+    width: clamp(8rem, 43vw, 19rem);
   }
   .descLoja {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: clamp(0.8rem, 3.5vw, 2rem);
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2.16vw, 1rem);
   }
-  .precoProduto{
+  .precoProduto {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: clamp(0.9rem, 3.5vw, 2rem);
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
   }
 }
 
-/* DESKTOP */
-@media (min-width: 992px) {
+/* CAROUSEL 3 IMG*/
+@media (min-width: 640px) and (max-width: 1023px) {
   .itemsLoja {
-    width: clamp(10rem, 23vw, 36rem);
+    width: clamp(8rem, 29vw, 15rem);
   }
   .descLoja {
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: clamp(1.4rem, 1.5vw, 3rem)
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2.16vw, 1rem);
   }
-  .precoProduto{
+  .precoProduto {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: clamp(0.9rem, 3.5vw, 2rem);
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
   }
 }
-
+/* CAROUSEL 4 IMG*/
+@media (min-width: 1024px) {
+  .itemsLoja {
+    width: clamp(8rem, 22vw, 30rem);
+  }
+  .descLoja {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2.16vw, 1rem);
+  }
+  .precoProduto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  }
+}
+/* CAROUSEL CONFIG */
 .slider-wrapper {
   position: relative;
 }
-
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -308,4 +355,43 @@
 }
 .slick-next {
   right: 0;
+}
+
+@media (min-width: 992px) {
+  .sectionLoja {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: clamp(2.75rem, 4.5vw, 5.5rem);
+  }
+}
+@media (max-width: 991px) {
+  .sectionLoja {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: clamp(1.2rem, 8.5vw, 3.2rem);
+  }
+}
+
+/* FOOTER */
+@media (min-width: 992px) {
+  .iconFooter {
+    padding: 2px;
+    width: clamp(2.4rem, 4.5vw, 3.2rem) !important;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .iconFooter {
+    padding: 2px;
+    width: clamp(1.4rem, 4.5vw, 4.2rem) !important;
+    height: auto;
+  }
+}
+.iconFooter {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+.iconFooter:hover {
+  background-color: #5517ff;
 }
