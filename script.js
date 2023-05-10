@@ -77,11 +77,3 @@ $(document).ready(function () {
   ],
   });
 });
-
-window.addEventListener("scroll", function() {
-  var div = document.getElementById("sua-div");
-  var pos = div.getBoundingClientRect().top;
-  if (pos < window.innerHeight) {
-    div.classList.add("rotated");
-  }
-});
